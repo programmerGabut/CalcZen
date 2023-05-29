@@ -1,0 +1,86 @@
+<!-- 
+    Navbar SC : https://tailwind-elements.com/docs/standard/navigation/navbar/
+    hero SC : https://tailwindcomponents.com/component/hero-component
+
+
+DESIGN : 
+- Ubah tu;isan 
+- Bg kayaknya gelap aja jangan hitam
+- Warna font jagn terang klai
+- jarak untuk tulisan masih belum bagus
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaclZen | Brokariim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-y-hidden bg-black">
+    <!-- NAVBAR START -->
+    <nav class="absolute flex w-full flex-wrap items-center justify-between bg-transparent py-2 text-neutral-200 lg:flex-wrap lg:justify-start lg:py-4" data-te-navbar-ref>
+      <div class="flex w-full flex-wrap items-center justify-between md:px-16 px-4">
+        <div class="mt-2 flex-grow basis-[100%] items-center lg:mt-0 flex lg:basis-auto" id="navbarSupportedContent4" data-te-collapse-item>
+          <a class="pr-2 m-3 text-xl font-semibold text-white" href="#">CalcZen</a>
+
+          <ul class="list-style-none mr-auto flex pl-0 flex-row" data-te-navbar-nav-ref>
+            <li class="m-3 lg:mb-2 lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400" href="index.html" data-te-nav-link-ref>Home</a>
+              <!-- <a class="text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400" href="#" data-te-nav-link-ref>Home</a> -->
+            </li>
+
+            <li class="m-3 lg:mb-2 lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400" href="calculator.html" data-te-nav-link-ref>Calculator</a>
+            </li>
+
+            <li class="m-3 lg:mb-2 lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400" href="#" data-te-nav-link-ref>Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- HERO STRAT -->
+    <div class="flex flex-wrap items-center h-screen">
+      <div class="bg-black w-full md:w-1/2 h-screen">
+        <div class="lg:mx-32 mx-[20px] md:mt-[150px] mt-[100px] content">
+          <p class="text-[14px] text-white font-thin">Unlock the Power of Numbers with Ease,</p>
+
+          <h1 class="md:text-[40px] text-[32px] text-white font-bold mb-5">Introducing the <span class="text-[#628E90]">Ultimate Calculator</span> Website!</h1>
+          <div class="description text-white w-full text-white opacity-60 text-[10px] mb-6 desc">
+            Simplify your calculations and elevate your mathematical prowess with our cutting-edge calculator website. Whether you're a student, professional, or simply someone who loves numbers
+          </div>
+          <div class="flex gap-8">
+            <button
+              class="button middle none center mr-3 rounded-lg bg-[#628E90] py-3 px-6 text-xs text-white shadow-md transition-all font-semibold uppercase duration-300 ease-in cursor-pointer hover:shadow-lg hover:transform hover:-translate-y-2"
+              data-ripple-light="true"
+              onclick="window.location.href = 'calculator.html';"
+            >
+              Get Started
+            </button>
+
+            <button class="button button--moema px-6 py-3 bg-[#628E90] hover:text-white text-white relative block focus:outline-none rounded-lg text-xs text-center font-semibold uppercase">Send us feedback</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- img -->
+      <div class="bg-black w-0 md:w-1/2 h-screen pr-2 overlay">
+        <img
+          src="https://images.unsplash.com/photo-1609697299491-69d2d5ed2c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=424&q=80"
+          class="py-2 object-cover h-screen w-full md:rounded-[24px] rounded-none"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- HERO END -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="animate.js"></script>
+  </body>
+</html>

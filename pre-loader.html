@@ -1,0 +1,34 @@
+<!-- 
+- kayakny g coocok halam apreloader dipisah dengan inde.html, karena klo di reload dia g bakal mudali dari halaman preloader
+tapi langsung dari halaman html
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- bagian kipas -->
+    <div class="preloader">
+      <div id="loading3" class="loading"></div>
+    </div>
+    <!-- end kipas -->
+    <div class="loader">
+      <div class="progress">
+        <div id="bar">
+          <div id="barconfirm"></div>
+        </div>
+        <div id="percent"></div>
+      </div>
+    </div>
+
+    <script src="animate.js"></script>
+  </body>
+</html>
