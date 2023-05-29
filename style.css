@@ -14,9 +14,9 @@ body {
 }
 .preloader {
   position: absolute;
-  top: 50%; /* Menggeser elemen ke titik tengah vertikal */
-  left: 50%; /* Menggeser elemen ke titik tengah horizontal */
-  transform: translate(-50%, -50%); /* Menggeser elemen ke tengah dengan persentase negatif */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +31,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* ini bg utama pre-loader, cuman waktu #bar jalan, dia ditimpa #bar */
 .loader {
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -42,7 +40,7 @@ body {
   background: black;
 }
 
-/* pertama tulisan warna putih, waktu bar nyampe di tulisan berubah jadi biru */
+
 #percent {
   display: flex;
   align-items: flex-end;
@@ -50,7 +48,6 @@ body {
   height: 100vh;
   width: 100%;
   color:#628E90;
-  /* color: white; */
   font-size: 50px;
   font-weight: lighter;
   font-style: italic;
